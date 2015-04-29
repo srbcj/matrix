@@ -1,4 +1,11 @@
 # Django settings for matrix project.
+import sys
+import os.path
+
+
+PROJECT_ROOT = os.path.join(
+    os.path.realpath(os.path.dirname(__file__)), os.pardir)
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -111,6 +118,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_ROOT, 'templates/'),
 )
 
 INSTALLED_APPS = (
@@ -121,7 +129,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
