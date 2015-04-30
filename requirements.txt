@@ -1,0 +1,18 @@
+BeautifulSoup==3.2.1
+Django==1.5
+MySQL-python==1.2.5
+PyJWT==1.1.0
+Pygments==1.6
+South==1.0.2
+django-crispy-forms==1.4.0
+django-debug-toolbar==0.10.2
+django-ipware==1.0.0
+django-pingback==0.3
+django-reversion==1.8.6
+django-xadmin==0.5.0
+django-xmlrpc==0.1.4
+docutils==0.11
+-e git+https://github.com/duoshuo/duoshuo-python-sdk.git@37a16e5d7c1d0899142d46f08ef53c79dbe887a0#egg=duoshuo_python_sdk-master
+python-memcached==1.53
+requests==2.6.2
+sqlparse==0.1.15
